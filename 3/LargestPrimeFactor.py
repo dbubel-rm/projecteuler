@@ -8,7 +8,6 @@
 import math
 import time
 
-
 def fermatFactorization(n):
     a = math.ceil(math.sqrt(n))
     b2 = (a*a) - n

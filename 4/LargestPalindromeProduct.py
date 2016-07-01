@@ -51,5 +51,3 @@ print findLargest(3)
 print time.time() - tStart
 
 
-
-
