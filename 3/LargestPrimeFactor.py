@@ -7,7 +7,7 @@
 """
 import math
 import time
-tStart = time.time()
+
 
 def fermatFactorization(n):
     a = math.ceil(math.sqrt(n))
@@ -28,6 +28,8 @@ def findPrimeFactors(factorList):
 def findLargestPrimeFactor(n):
     return findPrimeFactors(fermatFactorization(n))
 
+
+tStart = time.time()
 print findLargestPrimeFactor(600851475143)
 print time.time() - tStart, "seconds elapsed"
 
