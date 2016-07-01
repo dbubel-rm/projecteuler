@@ -8,7 +8,7 @@
 """
 import time
 
-def isPrime2(n):
+def isPrime(n):
     if n == 2 or n == 3:
         return True
     if n % 2 == 0 or n < 2:
@@ -16,14 +16,13 @@ def isPrime2(n):
     for i in range(3,int(n**0.5)+1,2):   # only odd numbers
         if n % i == 0:
             return False
-
     return True
 
 def findNthPtime(n):
     primeCount = 0
     i = 0
     while(primeCount < n):
-        if isPrime2(i):
+        if isPrime(i):
             primeCount+=1
         i+=1
     return i-1
