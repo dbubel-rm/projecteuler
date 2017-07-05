@@ -7,6 +7,7 @@
     Authur: thebeard@engineerbeard.com
 """
 import time
+
 def isPalindrome(digits):
     if digits < 10:
         return True

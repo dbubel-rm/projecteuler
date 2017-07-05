@@ -8,6 +8,7 @@
 import math
 import time
 
+
 def fermatFactorization(n):
     a = math.ceil(math.sqrt(n))
     b2 = (a*a) - n
@@ -17,12 +18,14 @@ def fermatFactorization(n):
     b=math.sqrt(b2)
     return [(a-b), (a+b)]
 
+
 def findPrimeFactors(factorList):
     primeFactors = []
     for n in factorList:
         [primeFactors.append(t) for t in fermatFactorization(n)]
     print "List of prime factors:", primeFactors
     return max(primeFactors)
+
 
 def findLargestPrimeFactor(n):
     return findPrimeFactors(fermatFactorization(n))
